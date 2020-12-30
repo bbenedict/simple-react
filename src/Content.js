@@ -13,13 +13,20 @@ import Dogs from "./Dogs";
 export default function Content() {
   return (
     <Router>
-      <div style={{display: "flex", padding: "20px"}}>
-        <div style={{display: "flex", flexDirection: "column", width: "100px" }}>
-          <Link to="/">Home</Link>
-          <Link to="/cats">Cats</Link>
-          <Link to="/dogs">Dogs</Link>
+      <div style={{display: "flex", height: "100%" }}>
+        <div 
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            width: "100px",
+            padding: "10px",
+            backgroundColor: "green"
+          }}>
+          <Link to="/" style={{ color: "lightblue", textDecoration: "none" }}>Home</Link>
+          <Link to="/cats" style={{ color: "lightblue", textDecoration: "none" }}>Cats</Link>
+          <Link to="/dogs" style={{ color: "lightblue", textDecoration: "none" }}>Dogs</Link>
         </div>
-        <div>
+        <div style={{ padding: "20px" }}>
           <Switch>
             <Route path="/cats">
               <Cats />
