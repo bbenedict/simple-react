@@ -22,11 +22,12 @@ export default function Content() {
             padding: "10px",
             backgroundColor: "green"
           }}>
-          <Link to="/" style={{ color: "lightblue", textDecoration: "none" }}>Home</Link>
-          <Link to="/cats" style={{ color: "lightblue", textDecoration: "none" }}>Cats</Link>
-          <Link to="/dogs" style={{ color: "lightblue", textDecoration: "none" }}>Dogs</Link>
+          <Link to="#main" style={{ color: "white", textDecoration: "none" }}>Skip to main</Link>
+          <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
+          <Link to="/cats" style={{ color: "white", textDecoration: "none" }}>Cats</Link>
+          <Link to="/dogs" style={{ color: "white", textDecoration: "none" }}>Dogs</Link>
         </div>
-        <div style={{ padding: "20px" }}>
+        <main id="main" style={{ padding: "20px" }}>
           <Switch>
             <Route path="/cats">
               <Cats />
@@ -38,7 +39,7 @@ export default function Content() {
               <Home />
             </Route>
           </Switch>
-        </div>
+        </main>
       </div>
     </Router>
   );

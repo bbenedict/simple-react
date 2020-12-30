@@ -9,7 +9,7 @@ export default function Cats() {
       </div>
       <div style={{ display: "flex" }}>
         <div style={{ marginRight: "10px" }}>
-          <img src={cat_1} style={{ height: "150px" }}/>
+          <img src={cat_1} style={{ height: "150px" }} alt="President Gerald Ford's cat Shan" />
         </div>
         <div style={{ paddingTop: "10px" }}>
           Gerald Ford's cat was a Siamese named Shan.  The cat was his daughter's.
