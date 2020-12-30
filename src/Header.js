@@ -15,7 +15,14 @@ export default function Header() {
   };
 
   return (
-    <div style={{ padding: "10px", height: "50px" }}>
+    <div 
+      style={{
+        padding: "10px",
+        height: "30px",
+        color: "white",
+        backgroundColor: "darkblue"
+      }}
+    >
       simple react app
       { isAuthenticated
         && (

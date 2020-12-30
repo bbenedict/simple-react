@@ -5,7 +5,7 @@ import Content from "./Content";
 
 export default function App() {
   return (
-    <div>
+    <div style={{ height: "100%", fontFamily: "sans-serif" }}>
       <Header />
       <Content />
     </div>
