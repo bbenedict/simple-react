@@ -1,4 +1,4 @@
-### simple-react app
+# simple-react app
 
 A simple react app to explore topics like accessibility and performance.
 
@@ -6,7 +6,7 @@ A simple react app to explore topics like accessibility and performance.
 
 This set of changes will focus on making the simple-react app more accessible.
 
-# lighthouse
+### lighthouse
 
 Lighthouse in the Chrome dev tools provides a report on accessibility.  The base app had an initial score of 65 with some basic items to address:
 
