@@ -42,8 +42,13 @@ export default function Header() {
         && (
           <>
             <span style={{ padding: "0px 10px" }}>
-              <input ref={usernameRef} type="text"/>
-              </span>
+              <label>
+                <span style={{ paddingRight: "10px" }}>
+                  Login with username
+                </span>
+                <input ref={usernameRef} type="text"/>
+              </label>
+            </span>
             <button onClick={() => onLoginClick()}>login</button>
           </>
       )}
