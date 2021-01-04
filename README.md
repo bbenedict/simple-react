@@ -15,7 +15,7 @@ Lighthouse in the Chrome dev tools provides a report on accessibility.  The base
 * Missing lang attribute on html tag
 * Forms do not have labels on inputs
 
-After addressing these issues, the report reveleaed one of the items I expected to show up.  Images with no alt text.
+After addressing these issues, the report revealed one of the items I expected to show up.  Images with no alt text.
 
 Report at 100% now.
 
