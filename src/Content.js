@@ -14,19 +14,22 @@ export default function Content() {
   return (
     <Router>
       <div style={{display: "flex", height: "100%" }}>
-        <div 
+        <nav 
           style={{
             display: "flex",
             flexDirection: "column",
-            width: "100px",
+            width: "150px",
             padding: "10px",
             backgroundColor: "green"
           }}>
+          <h3 style={{margin: "10px 0px 20px 0px" }}>
+            Table of contents
+          </h3>
           <Link to="#main" style={{ color: "white", textDecoration: "none" }}>Skip to main</Link>
           <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
           <Link to="/cats" style={{ color: "white", textDecoration: "none" }}>Cats</Link>
           <Link to="/dogs" style={{ color: "white", textDecoration: "none" }}>Dogs</Link>
-        </div>
+        </nav>
         <main id="main" style={{ padding: "20px" }}>
           <Switch>
             <Route path="/cats">

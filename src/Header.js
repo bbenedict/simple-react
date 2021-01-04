@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <div 
+    <header 
       style={{
         padding: "10px",
         height: "30px",
@@ -52,6 +52,6 @@ export default function Header() {
             <button onClick={() => onLoginClick()}>login</button>
           </>
       )}
-    </div>
+    </header>
   );
 };
