@@ -44,7 +44,7 @@ export default function Header() {
             <span style={{ padding: "0px 10px" }}>
               <label>
                 <span style={{ paddingRight: "10px" }}>
-                  Login with username or email
+                  Login with username
                 </span>
                 <input ref={usernameRef} type="text"/>
               </label>
