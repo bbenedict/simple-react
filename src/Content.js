@@ -9,6 +9,7 @@ import {
 import Home from "./Home";
 import Cats from "./Cats";
 import Dogs from "./Dogs";
+import OwnerShipChart from "./OwnerShipChart";
 
 export default function Content() {
   return (
@@ -18,7 +19,7 @@ export default function Content() {
           style={{
             display: "flex",
             flexDirection: "column",
-            width: "150px",
+            width: "200px",
             padding: "10px",
             backgroundColor: "green"
           }}>
@@ -26,9 +27,10 @@ export default function Content() {
             Table of contents
           </h3>
           <Link to="#main" style={{ color: "white", textDecoration: "none" }}>Skip to main</Link>
-          <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
-          <Link to="/cats" style={{ color: "white", textDecoration: "none" }}>Cats</Link>
-          <Link to="/dogs" style={{ color: "white", textDecoration: "none" }}>Dogs</Link>
+          <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home page</Link>
+          <Link to="/cats" style={{ color: "white", textDecoration: "none" }}>List of presidential cats</Link>
+          <Link to="/dogs" style={{ color: "white", textDecoration: "none" }}>List of presidentail dogs</Link>
+          <Link to="/owners" style={{ color: "white", textDecoration: "none" }}>Pet ownership 2018</Link>
         </nav>
         <main id="main" style={{ padding: "20px" }}>
           <Switch>
@@ -37,6 +39,9 @@ export default function Content() {
             </Route>
             <Route path="/dogs">
               <Dogs />
+            </Route>
+            <Route path="/owners">
+              <OwnerShipChart />
             </Route>
             <Route path="/">
               <Home />
