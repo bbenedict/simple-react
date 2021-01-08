@@ -4,16 +4,16 @@ import chart_1 from "./images/chart_1.png";
 export default function OwnerShipChart() {
   return (
     <div>
-      <h2 style={{ margin: "10px" }}>
+      <h2 style={{ margin: ".5em" }}>
         American Pet Ownership
       </h2>
       <figure role="group">
         <img
-          src={chart_1} style={{ height: "250px" }}
+          src={chart_1} style={{ height: "15em" }}
           alt="American pet ownership 2018"
           aria-describedby="chart-description"
         />
-        <p id="chart-description" style={{ width: "500px" }}>
+        <p id="chart-description" style={{ width: "30em" }}>
           Chart showing American pet ownership in 2018.
           33% of responders own only dogs. 11% own only cats.
           14% own a dog and a cat. 39% have no pets.

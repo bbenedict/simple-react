@@ -8,9 +8,16 @@ import thunk from "redux-thunk";
 import Reducer from "./Reducer";
 import App from "./App";
 
+const initialState = {
+  isAuthenticated: false,
+  username: null,
+  fontSize: 18,
+  theme: 'contrast'
+};
+
 const store = createStore(
   Reducer,
-  {},
+  initialState,
   composeWithDevTools(applyMiddleware(thunk)),
 );
 

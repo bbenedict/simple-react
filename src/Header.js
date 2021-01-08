@@ -14,11 +14,16 @@ export default function Header() {
     dispatch({ type: "LOGOUT" })
   };
 
+  const onFontClick = (increaseFont) => {
+    const actionType = increaseFont ? "INCREASE_FONT" : "DECREASE_FONT";
+    dispatch({ type: actionType })
+  };
+
   return (
     <header 
       style={{
-        padding: "10px",
-        height: "30px",
+        padding: ".5em",
+        height: "1.5em",
         color: "white",
         backgroundColor: "darkblue"
       }}
@@ -27,11 +32,11 @@ export default function Header() {
       { isAuthenticated
         && (
           <>
-            <span style={{ padding: "0px 10px" }}>
+            <span style={{ padding: "0 .5em" }}>
               { username }
             </span>
             <button  
-              style={{ paddingRight: "10px" }}
+              style={{ paddingRight: ".5em" }}
               onClick={() => onLogoutClick()}
             >
                 logout
@@ -41,9 +46,9 @@ export default function Header() {
       { !isAuthenticated
         && (
           <>
-            <span style={{ padding: "0px 10px" }}>
+            <span style={{ padding: "0 .5em" }}>
               <label>
-                <span style={{ paddingRight: "10px" }}>
+                <span style={{ paddingRight: ".5em" }}>
                   Login with username
                 </span>
                 <input ref={usernameRef} type="text"/>
@@ -52,6 +57,22 @@ export default function Header() {
             <button onClick={() => onLoginClick()}>login</button>
           </>
       )}
+      <>
+        <button  
+          style={{ paddingRight: ".5em" }}
+          onClick={() => onFontClick(true)}
+        >
+            Increase font size
+        </button>
+      </>
+      <>
+        <button  
+          style={{ paddingRight: ".5em" }}
+          onClick={() => onFontClick(false)}
+        >
+            Descrease font size
+        </button>
+      </>
     </header>
   );
 };

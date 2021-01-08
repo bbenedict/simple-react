@@ -19,11 +19,11 @@ export default function Content() {
           style={{
             display: "flex",
             flexDirection: "column",
-            width: "200px",
-            padding: "10px",
+            width: "13em",
+            padding: ".5em",
             backgroundColor: "green"
           }}>
-          <h3 style={{margin: "10px 0px 20px 0px" }}>
+          <h3 style={{margin: ".5em 0 1em 0" }}>
             Table of contents
           </h3>
           <Link to="#main" style={{ color: "white", textDecoration: "none" }}>Skip to main</Link>
@@ -32,7 +32,7 @@ export default function Content() {
           <Link to="/dogs" style={{ color: "white", textDecoration: "none" }}>List of presidentail dogs</Link>
           <Link to="/owners" style={{ color: "white", textDecoration: "none" }}>Pet ownership 2018</Link>
         </nav>
-        <main id="main" style={{ padding: "20px" }}>
+        <main id="main" style={{ padding: "1em" }}>
           <Switch>
             <Route path="/cats">
               <Cats />
