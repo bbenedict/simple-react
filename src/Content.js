@@ -9,7 +9,7 @@ import {
 import Home from "./Home";
 import Cats from "./Cats";
 import Dogs from "./Dogs";
-import OwnerShipChart from "./OwnerShipChart";
+import OwnershipChart from "./OwnershipChart";
 
 export default function Content() {
   return (
@@ -41,7 +41,7 @@ export default function Content() {
               <Dogs />
             </Route>
             <Route path="/owners">
-              <OwnerShipChart />
+              <OwnershipChart />
             </Route>
             <Route path="/">
               <Home />

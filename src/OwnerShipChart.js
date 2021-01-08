@@ -1,7 +1,7 @@
 import React from "react";
 import chart_1 from "./images/chart_1.png";
 
-export default function OwnerShipChart() {
+export default function OwnershipChart() {
   return (
     <div>
       <h2 style={{ margin: ".5em" }}>
