@@ -14,11 +14,16 @@ export default function Header() {
     dispatch({ type: "LOGOUT" })
   };
 
+  const onFontClick = (increaseFont) => {
+    const actionType = increaseFont ? "INCREASE_FONT" : "DECREASE_FONT";
+    dispatch({ type: actionType })
+  };
+
   return (
-    <header 
+    <div id="header" role="banner" aria-label="Primary Header"
       style={{
-        padding: "10px",
-        height: "30px",
+        padding: ".5em",
+        height: "1.5em",
         color: "white",
         backgroundColor: "darkblue"
       }}
@@ -27,31 +32,52 @@ export default function Header() {
       { isAuthenticated
         && (
           <>
-            <span style={{ padding: "0px 10px" }}>
+            <span style={{ padding: "0 .5em" }}>
               { username }
             </span>
             <button  
-              style={{ paddingRight: "10px" }}
+              style={{ paddingRight: ".5em" }}
               onClick={() => onLogoutClick()}
             >
-                logout
+                click to logout
             </button>
           </>
       )}
       { !isAuthenticated
         && (
           <>
-            <span style={{ padding: "0px 10px" }}>
+            <span style={{ padding: "0 .5em" }}>
               <label>
-                <span style={{ paddingRight: "10px" }}>
-                  Login with username
+                <span style={{ paddingRight: ".5em" }}>
+                  Type username to login
                 </span>
-                <input ref={usernameRef} type="text"/>
+                <input 
+                  ref={usernameRef} 
+                  type="text"
+                />
               </label>
             </span>
-            <button onClick={() => onLoginClick()}>login</button>
+            <button onClick={() => onLoginClick()}>
+              Click to login
+            </button>
           </>
       )}
-    </header>
+      <>
+        <button  
+          style={{ paddingRight: ".5em" }}
+          onClick={() => onFontClick(true)}
+        >
+            Increase font size
+        </button>
+      </>
+      <>
+        <button  
+          style={{ paddingRight: ".5em" }}
+          onClick={() => onFontClick(false)}
+        >
+            Descrease font size
+        </button>
+      </>
+    </div>
   );
 };
