@@ -4,9 +4,9 @@ import cat_1 from "./images/cat_1.png";
 export default function Cats() {
   return (
     <div>
-      <h2 style={{ margin: ".5em" }}>
+      <h1 style={{ margin: ".5em" }}>
         Presidential Cats
-      </h2>
+      </h1>
       <div style={{ display: "flex" }}>
         <div style={{ marginRight: "1em" }}>
           <img src={cat_1} style={{ height: "10em" }} alt="President Gerald Ford's cat Shan" />

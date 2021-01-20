@@ -4,9 +4,9 @@ import chart_1 from "./images/chart_1.png";
 export default function OwnershipChart() {
   return (
     <div>
-      <h2 style={{ margin: ".5em" }}>
+      <h1 style={{ margin: ".5em" }}>
         American Pet Ownership
-      </h2>
+      </h1>
       <figure role="group">
         <img
           src={chart_1} style={{ height: "15em" }}

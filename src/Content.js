@@ -15,7 +15,7 @@ export default function Content() {
   return (
     <Router>
       <div style={{display: "flex", height: "100%" }}>
-        <nav 
+        <div role="navigation" aria-label="Primary Navigation"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -31,8 +31,10 @@ export default function Content() {
           <Link to="/cats" style={{ color: "white", textDecoration: "none" }}>List of presidential cats</Link>
           <Link to="/dogs" style={{ color: "white", textDecoration: "none" }}>List of presidentail dogs</Link>
           <Link to="/owners" style={{ color: "white", textDecoration: "none" }}>Pet ownership 2018</Link>
-        </nav>
-        <main id="main" style={{ padding: "1em" }}>
+        </div>
+        <div id="main" role="main" aria-label="Primary Content"
+          style={{ padding: "1em" }}
+        >
           <Switch>
             <Route path="/cats">
               <Cats />
@@ -47,7 +49,7 @@ export default function Content() {
               <Home />
             </Route>
           </Switch>
-        </main>
+        </div>
       </div>
     </Router>
   );

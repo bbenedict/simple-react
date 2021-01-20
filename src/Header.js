@@ -20,7 +20,7 @@ export default function Header() {
   };
 
   return (
-    <header 
+    <div id="header" role="banner" aria-label="Primary Header"
       style={{
         padding: ".5em",
         height: "1.5em",
@@ -39,7 +39,7 @@ export default function Header() {
               style={{ paddingRight: ".5em" }}
               onClick={() => onLogoutClick()}
             >
-                logout
+                click to logout
             </button>
           </>
       )}
@@ -49,12 +49,17 @@ export default function Header() {
             <span style={{ padding: "0 .5em" }}>
               <label>
                 <span style={{ paddingRight: ".5em" }}>
-                  Login with username
+                  Type username to login
                 </span>
-                <input ref={usernameRef} type="text"/>
+                <input 
+                  ref={usernameRef} 
+                  type="text"
+                />
               </label>
             </span>
-            <button onClick={() => onLoginClick()}>login</button>
+            <button onClick={() => onLoginClick()}>
+              Click to login
+            </button>
           </>
       )}
       <>
@@ -73,6 +78,6 @@ export default function Header() {
             Descrease font size
         </button>
       </>
-    </header>
+    </div>
   );
 };
