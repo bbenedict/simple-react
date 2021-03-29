@@ -10,6 +10,7 @@ import Home from "./Home";
 import Cats from "./Cats";
 import Dogs from "./Dogs";
 import OwnershipChart from "./OwnershipChart";
+import List from "./List";
 
 export default function Content() {
   return (
@@ -31,6 +32,7 @@ export default function Content() {
           <Link to="/cats" style={{ color: "white", textDecoration: "none" }}>List of presidential cats</Link>
           <Link to="/dogs" style={{ color: "white", textDecoration: "none" }}>List of presidentail dogs</Link>
           <Link to="/owners" style={{ color: "white", textDecoration: "none" }}>Pet ownership 2018</Link>
+          <Link to="/list" style={{ color: "white", textDecoration: "none" }}>Performance test</Link>
         </div>
         <div id="main" role="main" aria-label="Primary Content"
           style={{ padding: "1em" }}
@@ -44,6 +46,9 @@ export default function Content() {
             </Route>
             <Route path="/owners">
               <OwnershipChart />
+            </Route>
+            <Route path="/list">
+              <List />
             </Route>
             <Route path="/">
               <Home />
