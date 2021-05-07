@@ -18,7 +18,7 @@ export default function OwnershipChart() {
           33% of responders own only dogs. 11% own only cats.
           14% own a dog and a cat. 39% have no pets.
           5% responded other.
-          Source the 2018 General Source Survey.
+          Sourced from the 2018 General Source Survey.
         </p>
       </figure>
     </div>
